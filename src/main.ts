@@ -49,6 +49,6 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ResponseInterfator());
   const configServices = app.get(ConfigService);
   const port = configServices.get('PORT') || 3000;
-  await app.listen(3000);
+  await app.listen(port);
 }
 bootstrap();

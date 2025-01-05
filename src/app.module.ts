@@ -35,7 +35,7 @@ import { StorageModule } from './s3/adaptor.module';
     //配置.env
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: ['.env.development', '.env.production', '1panel.env'],
+      envFilePath: ['1panel.env', '.env.development', '.env.production'],
     }),
     StorageModule,
     //配置JWT
